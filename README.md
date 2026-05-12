@@ -9,3 +9,6 @@ A repository for learning  and practicing different data collection techniques u
 
 ## Web Scraping
 - Beautifulsoup
+
+## Teacher
+- Shradha Khapra maa'm(Apna Collage)
