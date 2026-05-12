@@ -4,3 +4,5 @@ A repository for learning  and practicing different data collection techniques u
 
 ---
 # Topics covered
+## 1. REST API
+- Get Request
