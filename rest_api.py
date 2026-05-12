@@ -15,3 +15,7 @@ res = requests.get(arl)
 print(res.status_code)
 json_data = res.json()
 json_data
+
+
+df = pd.DataFrame(json_data)
+df
