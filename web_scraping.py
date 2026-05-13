@@ -1,4 +1,5 @@
 import requests
 url = "https://www.scrapethissite.com/pages/simple/"
 res = requests.get(url)
-print(res)
+with open("scraped_data/data1.html","w",encoding = "utf-8") as f:
+    f.write(res.text)
