@@ -27,3 +27,6 @@ for h3 in all_h3:
     population = (h3.find_next("div").select("span.country-population")[0].get_text(strip = True))
     all_countries.append([name,population])
     print(h3.attrs())
+all_countries
+import pandas as pd
+df = pd.DataFrame(all_countries,columns = ["Name","Population"])
