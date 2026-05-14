@@ -8,6 +8,8 @@ from bs4 import BeautifulSoup
 url = "https://www.scrapethissite.com/pages/simple/"
 res = requests.get(url)
 if (res.status_code) == 200:
-    print(res.content)
+    # print(res.content)
+    print(res.headers)
+    # print(res.text)
     
     
