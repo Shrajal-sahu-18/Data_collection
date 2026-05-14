@@ -16,3 +16,5 @@ with open ("scraped_data/data1.html","w", encoding = "utf-8") as f:
     f.write(res.text)
 
 from bs4 import BeautifulSoup
+with open ("scraped_data/data1.html","r") as f:
+    html_content = f.read()
