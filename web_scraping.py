@@ -12,4 +12,5 @@ if (res.status_code) == 200:
     print(res.headers)
     # print(res.text)
     
-    
+with open ("scraped_data/data1.html","w", encoding = "utf-8") as f:
+    f.write(res.text)
