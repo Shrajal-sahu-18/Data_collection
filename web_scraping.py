@@ -21,3 +21,6 @@ with open ("scraped_data/data1.html","r") as f:
 
 soup = BeautifulSoup(html_content,"lxml")
 all_h3 = soup.find_all("h3")
+all_countries = []
+for h3 in all_h3:
+    name = (h3.get_text(strip = True))
