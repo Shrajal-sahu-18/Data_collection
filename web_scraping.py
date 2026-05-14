@@ -20,3 +20,4 @@ with open ("scraped_data/data1.html","r") as f:
     html_content = f.read()
 
 soup = BeautifulSoup(html_content,"lxml")
+all_h3 = soup.find_all("h3")
