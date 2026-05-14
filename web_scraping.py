@@ -30,3 +30,4 @@ for h3 in all_h3:
 all_countries
 import pandas as pd
 df = pd.DataFrame(all_countries,columns = ["Name","Population"])
+df.to_csv("scraped_data/Data.csv",index = False)
