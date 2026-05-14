@@ -25,3 +25,4 @@ all_countries = []
 for h3 in all_h3:
     name = (h3.get_text(strip = True))
     population = (h3.find_next("div").select("span.country-population")[0].get_text(strip = True))
+    all_countries.append([name,population])
