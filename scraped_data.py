@@ -17,6 +17,7 @@ while True:
         print(f"downloading data from page{page_count}")
     page_count = page_count+1
     life_quotes = []
+    for i in  range(1,11):
 
    
     
