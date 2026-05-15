@@ -19,6 +19,11 @@ while True:
     life_quotes = []
     for i in  range(1,11):
         with open(f"scraped_data/quotes{i}.html","r",encoding = "utf-8") as f:
+            html_content = f.read()
+            soup = BeautifulSoup(html_content,"lxml")
+            all_quotes = soup.select("div.quote")
+            # for q in all_quotes:
+            #     q.select_one
 
    
     
