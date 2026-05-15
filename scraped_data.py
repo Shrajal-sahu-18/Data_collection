@@ -18,6 +18,7 @@ while True:
     page_count = page_count+1
     life_quotes = []
     for i in  range(1,11):
+        with open(f"scraped_data/quotes{i}.html","r",encoding = "utf-8") as f:
 
    
     
