@@ -9,6 +9,12 @@ while True:
     res = requests.get(url)
     soup = BeautifulSoup(res.text,"lxml")
     quotes = soup.select("div.quote")
-    
+    if not quotes:
+        print("no valid page anymore....")
+    with open("scraped_data/quotes{page_count}.html","w",encoding ="utf-8") as f:
+        f.write(res.text)
+        print(f"downloading data from page{page_count}")
+    page_count = page_count+1
+
    
     
