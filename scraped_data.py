@@ -9,6 +9,6 @@ while True:
     res = requests.get(url)
     soup = BeautifulSoup(res.text,"lxml")
     quotes = soup.select("div.quote")
-    print(quotes)
-    break
+    
+   
     
