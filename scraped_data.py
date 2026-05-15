@@ -22,8 +22,8 @@ while True:
             html_content = f.read()
             soup = BeautifulSoup(html_content,"lxml")
             all_quotes = soup.select("div.quote")
-            # for q in all_quotes:
-            #     q.select_one
+            for q in all_quotes:
+                q.select_one("span.text").get_text()
 
    
     
