@@ -11,6 +11,7 @@ while True:
     quotes = soup.select("div.quote")
     if not quotes:
         print("no valid page anymore....")
+        break
     with open("scraped_data/quotes{page_count}.html","w",encoding ="utf-8") as f:
         f.write(res.text)
         print(f"downloading data from page{page_count}")
